@@ -9,11 +9,12 @@ Welcome to the RICA Import Permit Service repository! This service allows you to
 To use this service, follow these steps:
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
-git clone 
+```linux
+git clone https://github.com/nkubana0/RICA-Import-permit.git
+```
+3. **Install Python**: If you don't have Python installed, download and install it from the [official website](https://www.python.org/downloads/).
 
-2. **Install Python**: If you don't have Python installed, download and install it from the [official website](https://www.python.org/downloads/).
-
-3. **Install Flask**: Flask is a web framework for Python. Install it using pip, the Python package manager, by running:
+4. **Install Flask**: Flask is a web framework for Python. Install it using pip, the Python package manager, by running:
 ```linux
 pip install Flask
 ```
