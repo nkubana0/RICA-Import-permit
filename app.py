@@ -49,9 +49,9 @@ Description: {description}'''
 
         smtp_server = 'smtp.gmail.com'
         smtp_port = 587
-        sender_email = 'i.shema@alustudent.com'
-        receiver_email = 'shemaivan27@gmail.com'
-        password = 'c44R3ksN7uW.VZr'
+        sender_email = 'sender.email@gmail.com'
+        receiver_email = 'recepients.email@gmail.com'
+        password = 'sender-email-password'
 
         # Send the email
         with smtplib.SMTP(smtp_server, smtp_port) as server:
