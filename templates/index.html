@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RICA - Import Permit Service</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
   </head>
   <body>
     <div class="container">
       <h1>RICA - Import Permit Service</h1>
-      <form id="importPermitForm">
+      <form id="importPermitForm" action="/submit-form" method="POST">
         <!-- Business Owner Details -->
         <h2>Business Owner Details</h2>
+        <div class="form-group">
+          <label for="ownerName">Business Owner's Name:</label>
+          <input
+            type="text"
+            id="ownerName"
+            name="ownerName"
+            placeholder="Enter owner's name"
+          />
+        </div>
         <div class="form-group">
           <label for="citizenship">Applicant Citizenship:</label>
           <select id="citizenship" name="citizenship">
@@ -160,6 +172,6 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
