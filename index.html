@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICA - Import Permit Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RICA - Import Permit Service</h1>
+        <form id="importPermitForm">
+            <!-- Business Owner Details -->
+            <h2>Business Owner Details</h2>
+            <div class="form-group">
+                <label for="citizenship">Applicant Citizenship:</label>
+                <select id="citizenship" name="citizenship">
+                    <option value="Rwandan">Rwandan</option>
+                    <option value="Foreigner">Foreigner</option>
+                </select>
+            </div>
+            <div class="form-group" id="phoneNumberGroup">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+            </div>
+            <div class="form-group" id="emailGroup">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address">
+            </div>
+            
+            <!-- Business Owner Address -->
+            <h2>Business Owner Address</h2>
+            <div class="form-group">
+                <label for="businessAddress">Business Address:</label>
+                <input type="text" id="businessAddress" name="businessAddress" placeholder="Enter business address">
+            </div>
+            <div class="form-group">
+                <label for="province">Province:</label>
+                <input type="text" id="province" name="province" placeholder="Enter province">
+            </div>
+            
+            <!-- Business Details -->
+            <h2>Business Details</h2>
+            <div class="form-group">
+                <label for="businessType">Business Type:</label>
+                <select id="businessType" name="businessType">
+                    <option value="Retailer">Retailer</option>
+                    <option value="Wholesale">Wholesale</option>
+                    <option value="Manufacturer">Manufacturer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Enter company name">
+            </div>
+            <div class="form-group">
+                <label for="tinNumber">TIN Number:</label>
+                <input type="text" id="tinNumber" name="tinNumber" placeholder="Enter TIN number (9 digits)">
+            </div>
+            <div class="form-group">
+                <label for="registrationDate">Registration Date:</label>
+                <input type="date" id="registrationDate" name="registrationDate">
+            </div>
+            <div class="form-group">
+                <label for="businessAddress">Business Address:</label>
+                <input type="text" id="businessAddress" name="businessAddress" placeholder="Enter business address">
+            </div>
+            <div class="form-group">
+                <label for="businessProvince">Business Province:</label>
+                <input type="text" id="businessProvince" name="businessProvince" placeholder="Enter business province">
+            </div>
+            
+            <!-- Product Information -->
+            <h2>Product Details</h2>
+            <div class="form-group">
+                <label for="productCategory">Product Category:</label>
+                <select id="productCategory" name="productCategory">
+                    <option value="General purpose">General purpose</option>
+                    <option value="Construction materials">Construction materials</option>
+                    <option value="Chemicals">Chemicals</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter weight">
+            </div>
+            <div class="form-group">
+                <label for="unitOfMeasurement">Unit of Measurement:</label>
+                <select id="unitOfMeasurement" name="unitOfMeasurement">
+                    <option value="Kgs">Kgs</option>
+                    <option value="Tonnes">Tonnes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity of Product(s):</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter quantity">
+            </div>
+            <div class="form-group">
+                <label for="description">Description of Products:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter description"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
