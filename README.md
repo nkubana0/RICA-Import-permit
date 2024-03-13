@@ -36,7 +36,7 @@ password = 'sender-email-password'  # Your email password
 6. Tip: Remember to turn on Less secure app access in order to for the payload to be sent via email.
 https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4NY8ADlgHcB94AAwfNZWEHlU38WYXiShcAvuo-SJL9HPPUUi2qWLt-samDjcnUOn5Iv9WA1lt1JaOCUm1ZhNeHGsCMA-31Wtf_-FgqJyTi74nYwvrs
 
-7. N.B: I later found out that most personal email addresses that are not school or work organisations don't have this option to to "Allow less secure apps" feature so using a personal email address doesn't send the form details to the recepient as they require more authentication(The mere user-email and password are not enough)
+7. **N.B:** I later found out that most personal email addresses that are not school or work organisations don't have this option to to "Allow less secure apps" feature so using a personal email address doesn't send the form details to the recepient as they require more authentication(The mere user-email and password are not enough)
 
 8. Run the Application: Start the Flask server by running the following command in the terminal:
 
